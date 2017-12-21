@@ -1,0 +1,53 @@
+PARAMETER DESCRIPTION
+------------------------------------------
+
+I/O FILES:
+
+  FLST = Filename of the sac file list (with path)
+  FOUT = Filename of the m3c output file (with path)
+
+FREQUENCY AXIS:
+
+  FMIN = Minimum frequency (in Hz)
+  FMAX = Maximum frequency (in Hz)
+  FNUM = Number of frequency bins
+  FTYP = Frequency axis type (1: Lin., 2: Log.)
+
+VELOCITY AXIS:
+
+  VMIN = Minimum velocity (in m)
+  VMAX = Maximum velocity (in m)
+  VNUM = Number of velocity bins
+  VTYP = Velocity axis type (1: Lin., 2: Log.)
+
+AZIMUTH:
+
+  KNUM = Number of azimuth bins
+
+CORE ALGORITHM:
+
+  CTYP = Processing algorithm
+         (1: Classic FK, 2: D.L., 3: S.V.D., 4: MUSIC)
+
+WINDOWING:
+
+  WTYP = (1: Fixed length, 2: Frequency dependent)
+  WCYC = Window lenght (in seconds or cycles)
+  WPER = Window tapering (between 0 and 1)
+
+FREQUENCY AVERAGING:
+
+  FAVN = Number of frequencies to be averaged
+  FAVP = Width of the averaging window
+         (N times the frequency step)
+
+C-MATRIX STACKING:
+
+  SNUM = Number of windows to stack
+  OPER = Overlapping between windows (%)
+
+MAXIMA SEARCH:
+
+  MLIM = Use resolution limit filter (1: no, 2: yes)
+  MNUM = Number of maxima in output
+
